@@ -39,7 +39,7 @@
 <body>
 
 
-<nav class="navbar" role="navigation" aria-label="main navigation">
+<!-- <nav class="navbar" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
         <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
             <span aria-hidden="true"></span>
@@ -64,7 +64,7 @@
         </div>
 
     </div>
-</nav>
+</nav> -->
 
 
 <section class="hero">
@@ -74,13 +74,13 @@
                 <div class="column has-text-centered">
                     <h1 class="title is-1 publication-title is-bold">
                         <img src="static/images/omniGUI_icon.png" style="width:1.6em;vertical-align: middle" alt="Logo"/>
-                        <span class="video-mme" style="vertical-align: middle">LVBench</span>
+                        <span class="video-mme" style="vertical-align: middle">OmniGUI</span>
                     </h1>
                     <h2 class="subtitle is-3 publication-subtitle" , style="margin-bottom: 20px;">
                         A GUI Agent Benchmark in Omni-Modal Smartphone Environments
                     </h2>
 
-                    <div class="is-size-5 publication-authors" , style="width: 80%; margin: 20px auto;" ,>
+                    <!-- <div class="is-size-5 publication-authors" , style="width: 80%; margin: 20px auto;" ,>
 
                         <span class="author-block" , style="font-size:24px"><a href="https://github.com/THUDM/LVBench">LVBench Team</a></span>
 
@@ -88,7 +88,11 @@
 
                     <div class="is-size-5 publication-authors">
 
-                    </div>
+                    </div> -->
+                    
+                    <!-- <div class="is-size-5 publication-authors" style="width: 80%; margin: 20px auto; visibility: hidden;">
+                        <span class="author-block" style="font-size:24px">LVBench Team</span>
+                    </div> -->
 
                     <div class="column has-text-centered">
                         <div class="publication-links">
@@ -125,19 +129,19 @@
               </span>
                             <!-- Leaderboard Link. -->
                             <span class="link-block">
-                <a href="#leaderboard"
+                <!-- <a href="#leaderboard"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <p style="font-size:18px">🏆</p>
                   </span>
                   <span>Leaderboard</span>
-                </a>
+                </a> -->
                                 <a href="https://huggingface.co/spaces/THUDM/LVBench"
                                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <p style="font-size:18px">🏆</p>
                   </span>
-                  <span>HuggingFace Leaderboard</span>
+                  <span>HuggingFace</span>
                 </a>
               </span>
 
@@ -166,7 +170,7 @@
     </div>
 </section>
 
-<!--leader board-->
+<!-- leader board
 <section class="section">
     <div class="container">
 
@@ -668,12 +672,12 @@
         </div>
 
     </div>
-</section>
+</section> -->
 
 <section class="hero is-light is-small">
     <div class="hero-body has-text-centered">
         <h1 class="title is-1 mathvista_other">
-            <span class="mathvista_other" style="vertical-align: middle">LVBench</span>
+            <span class="mathvista_other" style="vertical-align: middle">OmniGUI</span>
         </h1>
     </div>
 </section>
@@ -689,15 +693,16 @@
 
                     <div>
                         <div class="content has-text-centered">
-                            <img src="static/images/example_ours.png" style="width: 100%;"/>
-                            <p style="margin-bottom: 30px;">🔗 Full Video Link:&nbsp;&nbsp;<a
-                                    href="https://www.youtube.com/watch?v=rSE2YPcv89U">https://www.youtube.com/watch?v=rSE2YPcv89U</a>
-                            </p>
+                            <img src="static/images/teaser.png" style="width: 100%;"/>
 
                         </div>
 
 
                     </div>
+
+                    <p style="text-align: justify; margin-top: 20px; font-size: 0.95em;">
+                            <strong>OmniGUI Framework Overview:</strong> A GUI agent completes smartphone tasks across multiple steps based on multimodal instructions. At each step, it processes synchronous inputs—static screenshots, real-time audio, temporal video clips, and action history—to predict the next action (e.g., TYPE, TAP). Performance is evaluated using Type Match (TM) and Exact Match (EM) against human demonstrations.
+                    </p>
 
 
                 </div>
@@ -718,19 +723,17 @@
             <div class="content has-text-centered">
                 <h2 class="title is-3" style="margin-top: 30px;">Statistics</h2>
 
-
                 <div class="container-wrapper" style="display: flex; justify-content: center; align-items: center;">
-                    <div id="container"></div>
-                    <div id="image-container" style="margin-right: 20px;">
+                    <div id="image-container">
                         <img src="static/images/dataset_overview.png" alt="data-composition"
-                             style="max-width: 70%; display: inline-block;"/>
+                             style="width: 100%; max-width: 100%; display: block; margin: 0 auto;"/>
                     </div>
-
                 </div>
 
-                <p style="text-align: center; margin-left: auto; margin-right: auto; width: 50%;">
-                    (Left) <strong>Video categories.</strong> Our dataset contains 6 major categories and 21
-                    subcategories. <br> (Right) Performance radar chart of different models on LVBench.<br/>
+                <p style="text-align: center; margin: -30px auto 70px; width: 70%;">
+                    <strong>(a) Application & Language Distribution:</strong> Overview of the 29 apps, language split (Chinese/English), and data scale (episodes/steps). <br>
+                    <strong>(b) Task Dimension Distribution:</strong> Distribution of episodes and steps across five key task dimensions. <br>
+                    <strong>(c) Modality Dependency:</strong> Proportion of AV-Critical, AV-Supportive, and AV-Present tasks.
                 </p>
 
             </div>
@@ -744,13 +747,24 @@
         <div class="column">
             <div class="content has-text-centered">
                 <h2 class="title is-3">Benchmark Comparison</h2>
-                <img src="static/images/compare.png" alt="data-composition" style="max-width: 50%;"/>
+                <img src="static/images/benchmark_compare.png" alt="data-composition" style="max-width: 50%;"/>
+                <p style="text-align: justify; margin-left: auto; margin-right: auto; width: 49%;">
+                    <strong>Comparison of GUI agent benchmarks:</strong> OmniGUI distinguishes itself by supporting comprehensive multimodal inputs (Image, Video, Audio) at a <strong>per-step</strong> level, along with manual annotations, unlike previous vision-only or partially multimodal datasets.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--Action Space-->
+<section style="margin-top: 70px;">
+    <div class="columns is-centered">
+        <div class="column">
+            <div class="content has-text-centered">
+                <h2 class="title is-3">Action Space</h2>
+                <img src="static/images/action_space.png" alt="data-composition" style="max-width: 50%;"/>
                 <p style="text-align: center; margin-left: auto; margin-right: auto; width: 50%;">
-                    <strong>Comparison of different datasets.</strong> <strong>Open-domain</strong> represents whether
-                    the source of the video is
-                    diversified. <strong>Multi-type</strong> represents whether the types of questions are greater than
-                    2
-                    categories.
+                    <strong>Action Space of our benchmark.
                 </p>
             </div>
         </div>
