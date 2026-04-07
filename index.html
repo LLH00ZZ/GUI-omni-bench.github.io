@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="./static/css/video-player.css">
 
 
-    <script type="text/javascript" src="static/js/sort-table.js" defer></script>
+    <!-- sort-table.js removed, custom sort script at bottom -->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script defer src="./static/js/fontawesome.all.min.js"></script>
@@ -108,7 +108,7 @@
               </span>
                             <!-- Code Link. -->
                             <span class="link-block">
-                <a href="https://github.com/THUDM/LVBench"
+                <a href="https://github.com/omni-gui/OmniGUI"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-github"></i>
@@ -136,7 +136,7 @@
                   </span>
                   <span>Leaderboard</span>
                 </a> -->
-                                <a href="https://huggingface.co/spaces/THUDM/LVBench"
+                                <a href="https://huggingface.co/datasets/XIAOCHENLIN00zz/OmniGUI"
                                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <!-- <p style="font-size:18px">🤗</p> -->
@@ -173,7 +173,6 @@
     </div>
 </section>
 
-<!-- leader board -->
 <section class="section">
     <div class="container">
         <div class="columns is-centered">
@@ -187,27 +186,24 @@
                                 <tr style="color: #000; background-color: #f8f9fa;">
                                     <th rowspan="2" class="no-sort" style="vertical-align: middle; color: #000;"><strong>#</strong></th>
                                     <th rowspan="2" class="no-sort" style="vertical-align: middle; color: #000; min-width: 120px;"><strong>Model</strong></th>
-                                    <th colspan="4" style="color: #000; border-left: 1px solid #dbdbdb;"><strong>Localization</strong></th>
-                                    <th colspan="4" style="color: #000; border-left: 1px solid #dbdbdb;"><strong>Semantic Understanding</strong></th>
-                                    <th colspan="4" style="color: #000; border-left: 1px solid #dbdbdb;"><strong>Cross-modal Discrimination</strong></th>
-                                    <th colspan="4" style="color: #000; border-left: 1px solid #dbdbdb;"><strong>Temporal Reasoning</strong></th>
-                                    <th colspan="4" style="color: #000; border-left: 1px solid #dbdbdb;"><strong>Instant Response</strong></th>
-                                    <th colspan="4" style="color: #000; border-left: 1px solid #dbdbdb; background-color: #efefef;"><strong>Overall</strong></th>
+                                    <th colspan="4" class="no-sort" style="color: #000; border-left: 1px solid #dbdbdb;"><strong>Localization</strong></th>
+                                    <th colspan="4" class="no-sort" style="color: #000; border-left: 1px solid #dbdbdb;"><strong>Semantic Understanding</strong></th>
+                                    <th colspan="4" class="no-sort" style="color: #000; border-left: 1px solid #dbdbdb;"><strong>Cross-modal Discrimination</strong></th>
+                                    <th colspan="4" class="no-sort" style="color: #000; border-left: 1px solid #dbdbdb;"><strong>Temporal Reasoning</strong></th>
+                                    <th colspan="4" class="no-sort" style="color: #000; border-left: 1px solid #dbdbdb;"><strong>Instant Response</strong></th>
+                                    <th colspan="4" class="no-sort" style="color: #000; border-left: 1px solid #dbdbdb; background-color: #efefef;"><strong>Overall</strong></th>
                                 </tr>
                                 <tr style="color: #000; background-color: #f8f9fa; font-size: 0.7rem;">
-                                    <th style="border-left: 1px solid #dbdbdb; color: #000;">TM</th><th style="color: #000;">EM</th><th style="color: #000;">SR</th><th style="color: #000;">GP</th>
-                                    <th style="border-left: 1px solid #dbdbdb; color: #000;">TM</th><th style="color: #000;">EM</th><th style="color: #000;">SR</th><th style="color: #000;">GP</th>
-                                    <th style="border-left: 1px solid #dbdbdb; color: #000;">TM</th><th style="color: #000;">EM</th><th style="color: #000;">SR</th><th style="color: #000;">GP</th>
-                                    <th style="border-left: 1px solid #dbdbdb; color: #000;">TM</th><th style="color: #000;">EM</th><th style="color: #000;">SR</th><th style="color: #000;">GP</th>
-                                    <th style="border-left: 1px solid #dbdbdb; color: #000;">TM</th><th style="color: #000;">EM</th><th style="color: #000;">SR</th><th style="color: #000;">GP</th>
+                                    <th class="no-sort" style="border-left: 1px solid #dbdbdb; color: #000;">TM</th><th class="no-sort" style="color: #000;">EM</th><th class="no-sort" style="color: #000;">SR</th><th class="no-sort" style="color: #000;">GP</th>
+                                    <th class="no-sort" style="border-left: 1px solid #dbdbdb; color: #000;">TM</th><th class="no-sort" style="color: #000;">EM</th><th class="no-sort" style="color: #000;">SR</th><th class="no-sort" style="color: #000;">GP</th>
+                                    <th class="no-sort" style="border-left: 1px solid #dbdbdb; color: #000;">TM</th><th class="no-sort" style="color: #000;">EM</th><th class="no-sort" style="color: #000;">SR</th><th class="no-sort" style="color: #000;">GP</th>
+                                    <th class="no-sort" style="border-left: 1px solid #dbdbdb; color: #000;">TM</th><th class="no-sort" style="color: #000;">EM</th><th class="no-sort" style="color: #000;">SR</th><th class="no-sort" style="color: #000;">GP</th>
+                                    <th class="no-sort" style="border-left: 1px solid #dbdbdb; color: #000;">TM</th><th class="no-sort" style="color: #000;">EM</th><th class="no-sort" style="color: #000;">SR</th><th class="no-sort" style="color: #000;">GP</th>
                                     <th style="border-left: 1px solid #dbdbdb; background-color: #efefef; color: #000;">TM</th><th style="background-color: #efefef; color: #000;">EM</th><th style="background-color: #efefef; color: #000;">SR</th><th style="background-color: #efefef; color: #000;">GP</th>
                                 </tr>
                             </thead>
                             
                             <tbody style="color: #000;">
-                                <!-- <tr style="line-height: 1.5; border-top: 1px solid #dbdbdb;">
-                                    <td colspan="26" style="text-align: left; font-weight: bold; color: #000; padding: 8px 10px; background-color: #f0f0f0;">Proprietary Models</td>
-                                </tr> -->
                                 <tr>
                                     <td style="color: #000;">1</td><td style="text-align: left; color: #000;"><b>Gemini 3.1 Pro</b></td>
                                     <td style="color: #000;">88.1</td><td style="color: #000;">78.6</td><td style="color: #000;">58.3</td><td style="color: #000;">66.5</td>
@@ -218,7 +214,7 @@
                                     <td style="color: #000;"><b>83.6</b></td><td style="color: #000;"><b>66.6</b></td><td style="color: #000;"><b>37.2</b></td><td style="color: #000;"><b>46.4</b></td>
                                 </tr>
                                 <tr>
-                                    <td style="color: #000;">2</td><td style="text-align: left; color: #000;">Gemini 3 Pro</td>
+                                    <td style="color: #000;">2</td><td style="text-align: left; color: #000;">Gemini 3.0 Pro</td>
                                     <td style="color: #000;">88.9</td><td style="color: #000;">79.9</td><td style="color: #000;">55.9</td><td style="color: #000;">62.6</td>
                                     <td style="color: #000;">79.6</td><td style="color: #000;">67.0</td><td style="color: #000;">31.2</td><td style="color: #000;">41.7</td>
                                     <td style="color: #000;">75.0</td><td style="color: #000;">59.9</td><td style="color: #000;">28.3</td><td style="color: #000;">39.5</td>
@@ -227,7 +223,7 @@
                                     <td style="color: #000;">80.7</td><td style="color: #000;">66.4</td><td style="color: #000;">33.1</td><td style="color: #000;">43.3</td>
                                 </tr>
                                 <tr>
-                                    <td style="color: #000;">3</td><td style="text-align: left; color: #000;">Gemini 3 Flash</td>
+                                    <td style="color: #000;">3</td><td style="text-align: left; color: #000;">Gemini 3.0 Flash</td>
                                     <td style="color: #000;">86.8</td><td style="color: #000;">79.7</td><td style="color: #000;">53.1</td><td style="color: #000;">63.1</td>
                                     <td style="color: #000;">76.3</td><td style="color: #000;">63.4</td><td style="color: #000;">25.4</td><td style="color: #000;">40.8</td>
                                     <td style="color: #000;">71.1</td><td style="color: #000;">56.6</td><td style="color: #000;">22.5</td><td style="color: #000;">37.1</td>
@@ -254,10 +250,6 @@
                                     <td style="color: #000;">69.1</td><td style="color: #000;">40.7</td><td style="color: #000;">12.5</td><td style="color: #000;">24.2</td>
                                 </tr>
                                 
-                                <!-- <tr style="line-height: 1.5; border-top: 2px solid #dbdbdb;">
-                                    <td colspan="26" style="text-align: left; font-weight: bold; color: #000; padding: 8px 10px; background-color: #f0f0f0;">Open-source Models</td>
-                                </tr>    -->
-
                                 <tr>
                                     <td style="color: #000;">6</td><td style="text-align: left; color: #000;"><b>Qwen3-Omni</b></td>
                                     <td style="color: #000;">65.4</td><td style="color: #000;">43.9</td><td style="color: #000;">10.3</td><td style="color: #000;">28.5</td>
@@ -357,14 +349,14 @@
             <div class="content has-text-centered">
                 <h2 class="title is-3" style="margin-top: 30px;">Statistics</h2>
 
-                <div class="container-wrapper" style="display: flex; justify-content: center; align-items: center;">
+                <div class="container-wrapper" style="display: flex; justify-content: center; align-items: center; margin-top: 10px; margin-bottom: 10px;">
                     <div id="image-container">
                         <img src="static/images/dataset_overview.png" alt="data-composition"
                              style="width: 100%; max-width: 100%; display: block; margin: 0 auto;"/>
                     </div>
                 </div>
 
-                <div style="text-align: center; margin: -30px auto 50px; width: 100%;">
+                <div style="text-align: center; margin: 10px auto 10px; width: 100%;">
     
     <p style="display: inline-block; text-align: left; max-width: 80%; margin: 0;">
         <strong>(a) Application & Language Distribution:</strong> Overview of the 29 apps, language split (Chinese/English), and data scale (episodes/steps). <br>
@@ -383,16 +375,16 @@
     <div class="columns is-centered">
         <div class="column">
             <div class="content has-text-centered">
-                <h2 class="title is-3" style="margin-top: 0; margin-bottom: 5px;">Dataset Breakdown</h2>
+                <h2 class="title is-3" style="margin-top: 20px; margin-bottom: 10px !important;">Dataset Breakdown</h2>
 
-                <div class="container-wrapper" style="display: flex; justify-content: center; align-items: center; margin-top: 5px;">
+                <div class="container-wrapper" style="display: flex; justify-content: center; align-items: center; margin-top: 0;">
                     <div id="image-container">
                         <img src="static/images/data_distribution.png" alt="data-composition"
                              style="width: 100%; max-width: 100%; display: block; margin: 0 auto;"/>
                     </div>
                 </div>
 
-                <p style="text-align: justify; margin: 30px auto 70px; width: 72.5%;">
+                <p style="text-align: justify; margin: 30px auto 10px; width: 50%;">
                     <strong>Comprehensive breakdown of the OmniGUI dataset per application:</strong> The table reports the volume of episodes (Ep.) and total steps (Stp.) alongside their exact distribution across the five Task Dimensions (Loc. = Localization, Sem. = Semantic Understanding, Cro. = Cross-modal Discrimination, Tem. = Temporal Reasoning, Ins. = Instant Response) and the three Multimodal Dependency levels (Cri. = AV-Critical, Sup. = AV-Supportive, Pre. = AV-Present).
                 </p>
 
@@ -407,7 +399,7 @@
         <div class="column">
             <div class="content has-text-centered">
                 <h2 class="title is-3">Benchmark Comparison</h2>
-                <img src="static/images/benchmark_compare.png" alt="data-composition" style="max-width: 50%;"/>
+                <img src="static/images/benchmark_compare.jpg" alt="data-composition" style="max-width: 50%;"/>
                 <p style="text-align: justify; margin-left: auto; margin-right: auto; width: 50%;">
                     <strong>Comparison of GUI agent benchmarks:</strong> OmniGUI distinguishes itself by supporting comprehensive multimodal inputs (Image, Video, Audio) at a <strong>per-step</strong> level, along with manual annotations, unlike previous vision-only or partially multimodal datasets.
                 </p>
@@ -455,13 +447,13 @@
 
         <div class="columns is-centered mt-6 mb-0">
             <div class="column is-full has-text-centered content">
-                <h2 class="title is-3">Performance of Gemini 3 Pro Across Applications</h2>
+                <h2 class="title is-3">Performance of Gemini 3.0 Pro Across Applications</h2>
 
                 <div class="box m-5">
                     <div class="content has-text-centered">
-                        <img src="static/images/Performance_Across_Different_Applications.png" alt="" width="80%"/>
+                        <img src="static/images/performance_by_app_v2.png" alt="" width="80%"/>
                         <p style="text-align: left; margin-left: auto; margin-right: auto; width: 80%;">
-                            <strong>Performance of Gemini 3 Pro disaggregated by application:</strong> The horizontal bar chart reports the Exact Match (EM), Goal Progress (GP), and Success Rate (SR) metrics, sorted in ascending order by EM from bottom to top. The overall benchmark averages (EM=66.4%, GP=43.3%) are indicated by vertical dotted lines. 
+                            <strong>Performance of Gemini 3.0 Pro disaggregated by application:</strong> The horizontal bar chart reports the Exact Match (EM), Goal Progress (GP), and Success Rate (SR) metrics, sorted in ascending order by EM from bottom to top. The overall benchmark averages (EM=63.6%, GP=43.6%) are indicated by vertical dotted lines. 
                         </p>
                     </div>
                 </div>
@@ -478,7 +470,7 @@
 </section>
 
 
-<section class="section" id="BibTeX">
+<!-- <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
     <pre><code>@misc{wang2024lvbench,
       title={LVBench: An Extreme Long Video Understanding Benchmark},
@@ -490,7 +482,7 @@
 }
 </code></pre>
     </div>
-</section>
+</section> -->
 
 <footer class="footer">
     <!-- <div class="container"> -->
@@ -513,16 +505,72 @@
 
 <script>
     document.addEventListener("DOMContentLoaded", function () {
-        updateRowNumbers();
-        document.querySelector("#results").addEventListener("click", updateRowNumbers);
-    });
+        const table = document.getElementById("results");
+        const tbody = table.querySelector("tbody");
+        const headerRows = table.querySelectorAll("thead tr");
+        const secondRowThs = headerRows[1].querySelectorAll("th");
 
-    function updateRowNumbers() {
-        const rows = document.querySelectorAll("#results tbody tr");
-        rows.forEach((row, index) => {
-            row.querySelector("td").innerText = index + 1;
+        // Overall columns are the last 4 th elements in the second header row
+        // They map to column indices 22, 23, 24, 25 in each data row (0-based)
+        const totalCols = 26; // 2 + 5*4 + 4
+        const overallStartCol = 22;
+        const overallThs = [];
+        for (let i = secondRowThs.length - 4; i < secondRowThs.length; i++) {
+            overallThs.push(secondRowThs[i]);
+        }
+
+        let currentSortCol = null;
+        let currentSortDir = "desc"; // default descending (highest first)
+
+        overallThs.forEach(function (th, idx) {
+            const colIndex = overallStartCol + idx;
+            th.style.cursor = "pointer";
+            th.style.userSelect = "none";
+
+            th.addEventListener("click", function () {
+                // Toggle direction if clicking same column
+                if (currentSortCol === colIndex) {
+                    currentSortDir = currentSortDir === "desc" ? "asc" : "desc";
+                } else {
+                    currentSortCol = colIndex;
+                    currentSortDir = "desc";
+                }
+
+                // Clear sort indicators from all Overall ths
+                overallThs.forEach(function (t) {
+                    t.innerHTML = t.innerHTML.replace(/ ▲/g, "").replace(/ ▼/g, "");
+                });
+
+                // Add indicator to current
+                th.innerHTML += currentSortDir === "asc" ? " ▲" : " ▼";
+
+                // Sort rows
+                const rows = Array.from(tbody.querySelectorAll("tr"));
+                rows.sort(function (a, b) {
+                    const aVal = parseFloat(a.querySelectorAll("td")[colIndex].textContent) || 0;
+                    const bVal = parseFloat(b.querySelectorAll("td")[colIndex].textContent) || 0;
+                    return currentSortDir === "desc" ? bVal - aVal : aVal - bVal;
+                });
+
+                // Re-append sorted rows
+                rows.forEach(function (row) {
+                    tbody.appendChild(row);
+                });
+
+                // Update row numbers
+                updateRowNumbers();
+            });
         });
-    }
+
+        function updateRowNumbers() {
+            const rows = tbody.querySelectorAll("tr");
+            rows.forEach(function (row, index) {
+                row.querySelector("td").innerText = index + 1;
+            });
+        }
+
+        updateRowNumbers();
+    });
 </script>
 
 </body>
