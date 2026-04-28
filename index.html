@@ -34,6 +34,61 @@
             pointer-events: none;
             background-image: none !important; /* Remove the sort arrow */
         }
+
+        .publication-authors {
+            width: 85%;
+            margin: 0 auto 16px;
+            line-height: 1.45;
+        }
+
+        .publication-authors .author-line {
+            font-size: 1.9rem;
+            color: #2b86ea;
+            font-weight: 500;
+        }
+
+        .publication-authors .author-line sup,
+        .publication-authors .affiliation-line sup {
+            color: #7cc35c;
+            font-size: 0.72em;
+            vertical-align: super;
+        }
+
+        .publication-authors .footnote-line sup {
+            font-size: 0.78em;
+            vertical-align: super;
+        }
+
+        .publication-authors .affiliation-line {
+            font-size: 1.2rem;
+            color: #363636;
+            margin-top: 0.35rem;
+        }
+
+        .publication-authors .footnote-line {
+            font-size: 1rem;
+            color: #4a4a4a;
+            margin-top: 0.2rem;
+        }
+
+        @media screen and (max-width: 768px) {
+            .publication-authors {
+                width: 100%;
+                margin-bottom: 14px;
+            }
+
+            .publication-authors .author-line {
+                font-size: 1.25rem;
+            }
+
+            .publication-authors .affiliation-line {
+                font-size: 1rem;
+            }
+
+            .publication-authors .footnote-line {
+                font-size: 0.9rem;
+            }
+        }
     </style>
 </head>
 <body>
@@ -77,22 +132,21 @@
                         <span class="video-mme" style="vertical-align: middle">OmniGUI</span>
                     </h1>
                     <h2 class="subtitle is-3 publication-subtitle" , style="margin-bottom: 20px; margin-top: 20px;">
-                        A Step-Level GUI Agent Benchmark<br> in Omni-Modal Smartphone Environments
+                        OmniGUI: Benchmarking GUI Agents in<br>Omni-Modal Smartphone Environments
                     </h2>
 
-                    <!-- <div class="is-size-5 publication-authors" , style="width: 80%; margin: 20px auto;" ,>
-
-                        <span class="author-block" , style="font-size:24px"><a href="https://github.com/THUDM/LVBench">LVBench Team</a></span>
-
+                    <div class="publication-authors">
+                        <div class="author-line">
+                            Felix Henry<sup>*1</sup>, Xiaochen Lin<sup>*1</sup>, Jiangyou Zhu<sup>1</sup>, Yangfan<sup>1</sup>,
+                            Bingqian Zhang<sup>1</sup>, Min Chen<sup>1</sup>, and Shiyu Huang<sup>&dagger;1</sup>
+                        </div>
+                        <div class="affiliation-line">
+                            <sup>1</sup>XPeng Motors
+                        </div>
+                        <div class="footnote-line">
+                            <sup>*</sup>Equal contribution. <sup>&dagger;</sup>Corresponding author.
+                        </div>
                     </div>
-
-                    <div class="is-size-5 publication-authors">
-
-                    </div> -->
-                    
-                    <!-- <div class="is-size-5 publication-authors" style="width: 80%; margin: 20px auto; visibility: hidden;">
-                        <span class="author-block" style="font-size:24px">LVBench Team</span>
-                    </div> -->
 
                     <div class="column has-text-centered">
                         <div class="publication-links">
